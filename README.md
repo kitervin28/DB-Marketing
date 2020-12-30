@@ -33,7 +33,23 @@ this Query gets the names by starting by R.
 ![55](https://user-images.githubusercontent.com/73084975/103328181-b35f9b00-4a92-11eb-9e6c-7447db782c08.png)
 this Query counts the order number and the order amount from the order table.
 #### Query 6
+## SELECT working_area, COUNT(agentname) as working_area FROM agents GROUP BY agentname
+![6](https://user-images.githubusercontent.com/73084975/103330156-3edd2a00-4a9b-11eb-838a-69c31fe022c2.png)
+this Query counts the agent name and group by working area.
 #### Query 7
+## SELECT cust_code, cust_name, cust_city, cust_country FROM customer WHERE cust_country IS NOT NULL
+![7](https://user-images.githubusercontent.com/73084975/103330284-bf9c2600-4a9b-11eb-96cd-49eee77725d7.png)
+this Query select out in customer's country which is not null.
 #### Query 8
+## SELECT * FROM agents JOIN orders WHERE orders.ord_num = orders.ord_num
+![8](https://user-images.githubusercontent.com/73084975/103330462-8fa15280-4a9c-11eb-9fe6-f6d5926090c3.png)
+this Query select all from the agents table to join in orders table.
 #### Query 9
+## SELECT agentname, working_area, phone_no FROM agents WHERE agentname LIKE 'a%';
+![9](https://user-images.githubusercontent.com/73084975/103330564-06d6e680-4a9d-11eb-9930-170277fd836d.png)
+this Query selects column in agents table which more like a starting letter A in names.
 #### Query 10
+## SELECT CONCAT( cust_code, ', ' , cust_name, ', ' , cust_city, ', ' , working_area, ', ' , cust_country) AS CompleteInformation FROM customer LIMIT 20;
+![10](https://user-images.githubusercontent.com/73084975/103330667-7f3da780-4a9d-11eb-86c6-2026c7d32b12.png)
+this Query combines all the complete info in customer's table limited by 20
+
